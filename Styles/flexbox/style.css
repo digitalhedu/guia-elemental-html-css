@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+/* Mobile Firt */
+    .container{
+        background-color: lightblue;
+        height: 100vh;
+        display: flex;
+        flex-direction: row /* | row-reverse | column | column-reverse */ ;
+        flex-wrap: nowrap /* | wrap | wrap-reverse*/;
+        justify-content: flex-start /* | flex-end | center | space-between | space-around | space-evenly | */;
+        align-items: stretch /* | flex-start | flex-end | center | baseline */ ;
+        align-content: stretch /* flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | baseline |*/ ;
+     }
+
+     .box-one{
+        order: 0; /* default is 0 */
+        flex-grow: 1; /* default 0 */
+        flex-shrink: 1; /* default 1 */
+        align-self: auto /* | flex-start | flex-end | center | baseline | stretch */ ;
+        background-color: lightcoral;
+     }
+
+     .box-two{
+        order: 0; /* default is 0 */
+        flex-grow: 1; /* default 0 */
+        flex-shrink: 1; /* default 1 */
+        align-self: auto /* | flex-start | flex-end | center | baseline | stretch */ ;
+        background-color: lightgoldenrodyellow;
+     }

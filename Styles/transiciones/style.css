@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form.container{
+    flex-direction: column;
+}
+
+.oculto{
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+/* A partir de acá Tocar */
+
+.btn, .btn:visited , .btn:link{ 
+    width: 25%;
+    height: 3rem;
+    background-color: whitesmoke;
+    border-radius: 1.5rem;
+    box-shadow: 0rem 1.5rem 1.5rem rgba(30, 30, 30, .3) ;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .75rem 0rem;
+    color: lightskyblue;
+    transition: all .3s ease;
+}
+
+a.btn:hover {
+    width: 25%;
+    height: 4rem;
+    background-color: rgb(65, 105, 225);
+    border-radius: 2rem;
+    box-shadow: 0rem .5rem .25rem 0rem rgb(30, 48, 102) ;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem 0rem;
+    color: whitesmoke
+}
+
+a.btn:active {
+    transform: translate(0rem,.5rem);
+    box-shadow: 0rem 0rem 0rem 0rem rgba(30, 48, 102,0) ;
+}
+
+/* En Formularios */
+
+.text{
+    width: 25%;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0rem .5rem 1rem rgba(30, 30, 30, .3) ;
+    font-size: 1rem;
+    text-align: center;
+    padding: .5rem;
+    color: lightskyblue;
+    transition: all .3s ease;
+}
+
+.text:focus{
+    width: 25%;
+    height: 3rem;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    box-shadow: 0rem .5rem 1rem rgba(30, 30, 30, .3) ;
+    font-size: 2rem;
+    text-align: center;
+    padding: .5rem;
+    background-color: white;
+    transition: all .3s ease;
+}
+
+
+.text:focus:valid{
+    background-color: lightseagreen;
+    color: white;
+}
+
+.text:focus:invalid{
+    background-color: lightcoral;
+    color: white;
+}
+
+.check {
+    width: 25%;
+}
+
+.check input{
+ appearance: none;
+}
+
+.check label{
+    display: block;
+    height: 3rem;
+    background-color: white;
+    color: lightskyblue;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .75rem ;
+    box-shadow: 0rem .5rem .15rem 0rem rgb(30, 48, 102);
+    transition: all .3s ease;
+}
+
+.check input:checked + label{
+    background-color: lightgreen;
+    color: white;
+    box-shadow: 0rem 0rem 0rem 0rem rgba(30, 30, 30, 0);
+    transform: translateY(.5rem);
+}
+
+.radio{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio input{
+appearance: none;
+}
+
+.radio label{
+    width: 45%;
+    height: 3rem;
+    background-color: white;
+    color: lightskyblue;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .75rem ;
+    border-radius: 1.5rem;
+    box-shadow: 0rem .5rem .15rem 0rem rgba(30, 30, 30, .3);
+    transition: all .3s ease;
+}
+
+
+.radio input:checked + label{
+    background-color: crimson;
+    color: white;
+    box-shadow: 0rem 0rem 0rem 0rem rgba(30, 30, 30, 0);
+    transform: translateY(.5rem);
+}
